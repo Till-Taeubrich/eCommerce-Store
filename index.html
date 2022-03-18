@@ -20,7 +20,7 @@
           <img src="./assets/logo.png" alt="logo" width="125px">
         </div>
         <nav>
-          <ul>
+          <ul id="menu-items">
             <li> <a href=""> Home </a></li>
             <li> <a href=""> Product </a></li>
             <li> <a href=""> About </a></li>
@@ -29,6 +29,7 @@
           </ul>
         </nav>
         <img src="./assets/cart.png" alt="cart-icon" width="30px" height="30px">
+        <img src="./assets/menu.png" alt="menu-icon" class="menu-icon" onclick="menutoggle()">
       </div>
       <div class="row">
         <div class="col-2">
@@ -349,6 +350,19 @@
       <hr>
     </div>
   </div>
+  <script>
+    const menuItems = document.getElementById('menu-items');
+
+    menuItems.style.maxHeight = '0px';
+
+    function menutoggle() {
+      if (menuItems.style.maxHeight === '0px') {
+        menuItems.style.maxHeight = '200px';
+      } else {
+        menuItems.style.maxHeight = '0px';
+      }
+    }
+  </script>
 </body>
 
 </html>
