@@ -287,6 +287,7 @@ small {
 	flex-basis: 12%;
 	text-align: center;
 }
+
 ul {
 	list-style: none;
 }
@@ -297,6 +298,7 @@ ul {
 
 .app-logo img {
 	width: 140px;
+	cursor: pointer;
 }
 
 /* responsive */
@@ -315,6 +317,7 @@ ul {
 select {
 	border: 1px solid var(--orange);
 	padding: 5px;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 select:focus {
@@ -442,7 +445,7 @@ td img {
 .total-price table {
 	border-top: 3px solid var(--orange);
 	width: 100%;
-	max-width: 490px;
+	max-width: 400px;
 }
 
 td:last-child,
